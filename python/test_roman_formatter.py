@@ -9,7 +9,7 @@
 
 from roman_formatter import RomanFormatter
 
-def test_convert_3():
+def test_convert_1():
     fmt = RomanFormatter()
-    roman = fmt.format(3)
-    assert roman == "III"
+    roman = fmt.format(1)
+    assert roman == "I"

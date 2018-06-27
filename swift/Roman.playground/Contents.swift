@@ -17,11 +17,15 @@ import XCTest
 //}
 
 class RomanFormatterTests: XCTestCase {
-    let fmt = RomanFormatter()
+    var fmt: RomanFormatter!
     
-    func testConvert3() {
-        let roman = fmt.format(3)
-        XCTAssertEqual(roman, "III")
+    override func setUp() {
+        fmt = RomanFormatter()
+    }
+
+    func testConvert1() {
+        let roman = fmt.format(1)
+        XCTAssertEqual(roman, "I")
     }
 }
 
