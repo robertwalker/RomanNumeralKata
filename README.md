@@ -1,6 +1,26 @@
 Roman Numeral Kata
 ==================
 
+What is Kata?
+-------------
+
+Kata are detailed choreographed patterns of movements practiced either solo or in pairs. The term "form" is used for the corresponding concept in non-Japanese martial arts in general.
+
+[Kata -- Wikipedia Page](https://en.wikipedia.org/wiki/Kata)
+
+The Code Kata
+-------------
+
+This scaffolding setup is loosely based on the Roman Numeral Kata as described here:
+
+[Roman Kata from Coding Dojo](https://codingdojo.org/kata/RomanNumerals/)
+
+To get started clone this repository, choose your preferred language, and follow the setup instructions in this README.
+
+Note that some solutions to the kata will be provided in the "develop" branch of this repository. So to avoid any spoilers make sure you are on the "master" branch, which you should get by default after cloning.
+
+---
+
 Python with Pytest
 ------------------
 
@@ -17,6 +37,8 @@ Python with Pytest
 
     $ cd python
     $ py.test
+
+---
 
 Ruby with Minitest
 ------------------
@@ -37,6 +59,8 @@ In case minitest is not installed:
 
     $ cd ruby
     $ ruby roman_formatter_test.rb
+
+---
 
 Node.js with Mocha and Chai
 ---------------------------
@@ -68,6 +92,8 @@ If you don't have None.js or Yarn then can be installed with Homebrew:
     $ cd nodejs
     $ mocha tests --recursive --watch
 
+---
+
 TypeScript with Jest
 --------------------
 
@@ -90,14 +116,14 @@ If you don't have Yarn:
     $ cd typescript
     $ npx jest --watch
 
-Swift
------
+---
+
+Swift with XCTest
+-----------------
 
 ### Check Your Xcode Installation
 
-1. Launch Xcode
-2. Ensure that you have Version 9.4 (9F1027a)
-3. If you don't have Xcode install it from the Mac App Store (free download)
+If you don't have Xcode (9.4+) install it from the Mac App Store (free download)
 
 ### Run Tests
 
