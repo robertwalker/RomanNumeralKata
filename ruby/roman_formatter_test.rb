@@ -11,9 +11,9 @@ require 'minitest/autorun'
 require './roman_formatter'
 
 class TestRomanFormatter < Minitest::Test
-  def test_convert_3
+  def test_convert_1
     fmt = RomanFormatter.new
-    roman = fmt.format(3)
-    assert_equal roman, "III"
+    roman = fmt.format(1)
+    assert_equal roman, "I"
   end
 end

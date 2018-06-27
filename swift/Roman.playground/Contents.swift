@@ -36,7 +36,11 @@ class RomanFormatter {
 }
 
 class RomanFormatterTests: XCTestCase {
-    let fmt = RomanFormatter()
+    var fmt: RomanFormatter!
+    
+    override func setUp() {
+        fmt = RomanFormatter()
+    }
     
     func testConvert1() throws {
         let roman = try fmt.format(1)
