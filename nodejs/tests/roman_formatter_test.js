@@ -15,9 +15,9 @@ var expect = chai.expect;
 var RomanFormatter = require("../src/roman_formatter");
 
 describe("RomanFormatter", function() {
-  it("should return the roman numberal III when given the arabic number 3", function() {
+  it("should convert 1 to the Roman numeral I", function() {
     var fmt = new RomanFormatter([]);
-    var roman = fmt.format(3);
-    expect(roman).to.equal("III");
+    var roman = fmt.format(1);
+    expect(roman).to.equal("I");
   });
 });
