@@ -38,178 +38,178 @@ class RomanFormatter {
 class RomanFormatterTests: XCTestCase {
     let fmt = RomanFormatter()
     
-    func testConvert1() {
-        let roman = try! fmt.format(1)
+    func testConvert1() throws {
+        let roman = try fmt.format(1)
         XCTAssertEqual(roman, "I")
     }
     
-    func testConvert2() {
-        let roman = try! fmt.format(2)
+    func testConvert2() throws {
+        let roman = try fmt.format(2)
         XCTAssertEqual(roman, "II")
     }
     
-    func testConvert3() {
-        let roman = fmt.format(3)
+    func testConvert3() throws {
+        let roman = try fmt.format(3)
         XCTAssertEqual(roman, "III")
     }
     
-    func testConvert4() {
-        let roman = try! fmt.format(4)
+    func testConvert4() throws {
+        let roman = try fmt.format(4)
         XCTAssertEqual(roman, "IV")
     }
     
-    func testConvert5() {
-        let roman = try! fmt.format(5)
+    func testConvert5() throws {
+        let roman = try fmt.format(5)
         XCTAssertEqual(roman, "V")
     }
     
-    func testConvert6() {
-        let roman = try! fmt.format(6)
+    func testConvert6() throws {
+        let roman = try fmt.format(6)
         XCTAssertEqual(roman, "VI")
     }
     
-    func testConvert7() {
-        let roman = try! fmt.format(7)
+    func testConvert7() throws {
+        let roman = try fmt.format(7)
         XCTAssertEqual(roman, "VII")
     }
     
-    func testConvert8() {
-        let roman = try! fmt.format(8)
+    func testConvert8() throws {
+        let roman = try fmt.format(8)
         XCTAssertEqual(roman, "VIII")
     }
     
-    func testConvert9() {
-        let roman = try! fmt.format(9)
+    func testConvert9() throws {
+        let roman = try fmt.format(9)
         XCTAssertEqual(roman, "IX")
     }
     
-    func testConvert10() {
-        let roman = try! fmt.format(10)
+    func testConvert10() throws {
+        let roman = try fmt.format(10)
         XCTAssertEqual(roman, "X")
     }
     
-    func testConvert11() {
-        let roman = try! fmt.format(11)
+    func testConvert11() throws {
+        let roman = try fmt.format(11)
         XCTAssertEqual(roman, "XI")
     }
     
-    func testConvert19() {
-        let roman = try! fmt.format(19)
+    func testConvert19() throws {
+        let roman = try fmt.format(19)
         XCTAssertEqual(roman, "XIX")
     }
     
-    func testConvert20() {
-        let roman = try! fmt.format(20)
+    func testConvert20() throws {
+        let roman = try fmt.format(20)
         XCTAssertEqual(roman, "XX")
     }
     
-    func testConvert27() {
-        let roman = try! fmt.format(27)
+    func testConvert27() throws {
+        let roman = try fmt.format(27)
         XCTAssertEqual(roman, "XXVII")
     }
     
-    func testConvert30() {
-        let roman = try! fmt.format(30)
+    func testConvert30() throws {
+        let roman = try fmt.format(30)
         XCTAssertEqual(roman, "XXX")
     }
     
-    func testConvert40() {
-        let roman = try! fmt.format(40)
+    func testConvert40() throws {
+        let roman = try fmt.format(40)
         XCTAssertEqual(roman, "XL")
     }
     
-    func testConvert44() {
-        let roman = try! fmt.format(44)
+    func testConvert44() throws {
+        let roman = try fmt.format(44)
         XCTAssertEqual(roman, "XLIV")
     }
     
-    func testConvert49() {
-        let roman = try! fmt.format(49)
+    func testConvert49() throws {
+        let roman = try fmt.format(49)
         XCTAssertEqual(roman, "XLIX")
     }
     
-    func testConvert50() {
-        let roman = try! fmt.format(50)
+    func testConvert50() throws {
+        let roman = try fmt.format(50)
         XCTAssertEqual(roman, "L")
     }
     
-    func testConvert90() {
-        let roman = try! fmt.format(90)
+    func testConvert90() throws {
+        let roman = try fmt.format(90)
         XCTAssertEqual(roman, "XC")
     }
     
-    func testConvert100() {
-        let roman = try! fmt.format(100)
+    func testConvert100() throws {
+        let roman = try fmt.format(100)
         XCTAssertEqual(roman, "C")
     }
     
-    func testConvert200() {
-        let roman = try! fmt.format(200)
+    func testConvert200() throws {
+        let roman = try fmt.format(200)
         XCTAssertEqual(roman, "CC")
     }
     
-    func testConvert400() {
-        let roman = try! fmt.format(400)
+    func testConvert400() throws {
+        let roman = try fmt.format(400)
         XCTAssertEqual(roman, "CD")
     }
     
-    func testConvert499() {
-        let roman = try! fmt.format(499)
+    func testConvert499() throws {
+        let roman = try fmt.format(499)
         XCTAssertEqual(roman, "CDXCIX")
     }
     
-    func textConvert500() {
-        let roman = try! fmt.format(500)
+    func textConvert500() throws {
+        let roman = try fmt.format(500)
         XCTAssertEqual(roman, "D")
     }
     
-    func testConvert900() {
-        let roman = try! fmt.format(900)
+    func testConvert900() throws {
+        let roman = try fmt.format(900)
         XCTAssertEqual(roman, "CM")
     }
     
-    func testConvert999() {
-        let roman = try! fmt.format(999)
+    func testConvert999() throws {
+        let roman = try fmt.format(999)
         XCTAssertEqual(roman, "CMXCIX")
     }
     
-    func testConvert1000() {
-        let roman = try! fmt.format(1000)
+    func testConvert1000() throws {
+        let roman = try fmt.format(1000)
         XCTAssertEqual(roman, "M")
     }
     
-    func testConvert1234() {
-        let roman = try! fmt.format(1234)
+    func testConvert1234() throws {
+        let roman = try fmt.format(1234)
         XCTAssertEqual(roman, "MCCXXXIV")
     }
     
-    func testConvert1666() {
-        let roman = try! fmt.format(1666)
+    func testConvert1666() throws {
+        let roman = try fmt.format(1666)
         XCTAssertEqual(roman, "MDCLXVI")
     }
     
-    func testConvet1999() {
-        let roman = try! fmt.format(1999)
+    func testConvet1999() throws {
+        let roman = try fmt.format(1999)
         XCTAssertEqual(roman, "MCMXCIX")
     }
     
-    func testConvert2000() {
-        let roman = try! fmt.format(2000)
+    func testConvert2000() throws {
+        let roman = try fmt.format(2000)
         XCTAssertEqual(roman, "MM")
     }
     
-    func testConvert2018() {
-        let roman = try! fmt.format(2018)
+    func testConvert2018() throws {
+        let roman = try fmt.format(2018)
         XCTAssertEqual(roman, "MMXVIII")
     }
     
-    func testConvert2019() {
-        let roman = try! fmt.format(2019)
+    func testConvert2019() throws {
+        let roman = try fmt.format(2019)
         XCTAssertEqual(roman, "MMXIX")
     }
     
-    func testConvert3999() {
-        let roman = try! fmt.format(3999)
+    func testConvert3999() throws {
+        let roman = try fmt.format(3999)
         XCTAssertEqual(roman, "MMMCMXCIX")
     }
     
