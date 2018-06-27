@@ -20,7 +20,7 @@ class RomanFormatterTests: XCTestCase {
     let fmt = RomanFormatter()
     
     func testConvert3() {
-        let roman = try! fmt.format(3)
+        let roman = fmt.format(3)
         XCTAssertEqual(roman, "III")
     }
 }
