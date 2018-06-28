@@ -15,8 +15,8 @@ class RomanFormatter {
         var arabic = number
         var roman = ""
         
-        var arabicNumerals = [50, 10, 5, 1]
-        var romanNumberals = ["L", "X", "V", "I"]
+        var arabicNumerals = [50, 10, 5, 4, 1]
+        var romanNumberals = ["L", "X", "V", "IV", "I"]
         for index in 0..<arabicNumerals.count {
             while arabic >= arabicNumerals[index] {
                 roman += romanNumberals[index]
@@ -48,6 +48,11 @@ class RomanFormatterTests: XCTestCase {
     func testConvert3() {
         let roman = fmt.format(3)
         XCTAssertEqual(roman, "III")
+    }
+    
+    func testConvert4() {
+        let roman = fmt.format(4)
+        XCTAssertEqual(roman, "IV")
     }
     
     func testConvert5() {
