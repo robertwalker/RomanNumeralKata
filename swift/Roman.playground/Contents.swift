@@ -19,8 +19,9 @@ class RomanFormatter {
             roman += "X"
             arabic -= 10
         }
-        for _ in 0..<arabic {
+        while arabic >= 1 {
             roman += "I"
+            arabic -= 1
         }
         
         return roman
