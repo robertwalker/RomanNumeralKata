@@ -15,7 +15,7 @@ class RomanFormatter {
         var arabic = number
         var roman = ""
         
-        if arabic == 10 {
+        while arabic >= 10 {
             roman += "X"
             arabic -= 10
         }
@@ -52,6 +52,11 @@ class RomanFormatterTests: XCTestCase {
     func testConvert10() {
         let roman = fmt.format(10)
         XCTAssertEqual(roman, "X")
+    }
+    
+    func testConvert20() {
+        let roman = fmt.format(20)
+        XCTAssertEqual(roman, "XX")
     }
 }
 
