@@ -8,7 +8,6 @@ beforeEach(() => {
 
 describe("RomanFormatter", () => {
   test("convert 1", () => {
-    let fmt = new RomanFormatter();
     let roman = fmt.format(1);
     expect(roman).toBe("I");
   });
