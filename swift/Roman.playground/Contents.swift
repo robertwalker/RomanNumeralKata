@@ -11,9 +11,14 @@ import Foundation
 import XCTest
 
 class RomanFormatter {
-    func format(_ arabic: Int) -> String {
+    func format(_ number: Int) -> String {
+        var arabic = number
         var roman = ""
-
+        
+        if arabic == 10 {
+            roman += "X"
+            arabic -= 10
+        }
         for _ in 0..<arabic {
             roman += "I"
         }
@@ -28,20 +33,25 @@ class RomanFormatterTests: XCTestCase {
     override func setUp() {
         fmt = RomanFormatter()
     }
-
+    
     func testConvert1() {
         let roman = fmt.format(1)
         XCTAssertEqual(roman, "I")
     }
-
+    
     func testConvert2() {
         let roman = fmt.format(2)
         XCTAssertEqual(roman, "II")
     }
-
+    
     func testConvert3() {
         let roman = fmt.format(3)
         XCTAssertEqual(roman, "III")
+    }
+    
+    func testConvert10() {
+        let roman = fmt.format(10)
+        XCTAssertEqual(roman, "X")
     }
 }
 
