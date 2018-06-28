@@ -15,17 +15,15 @@ class RomanFormatter {
         var arabic = number
         var roman = ""
         
-        var arabicNumeral = 10
-        var romanNumberal = "X"
-        while arabic >= arabicNumeral {
-            roman += romanNumberal
-            arabic -= arabicNumeral
+        var arabicNumerals = [10, 1]
+        var romanNumberals = ["X", "I"]
+        while arabic >= arabicNumerals[0] {
+            roman += romanNumberals[0]
+            arabic -= arabicNumerals[0]
         }
-        arabicNumeral = 1
-        romanNumberal = "I"
-        while arabic >= arabicNumeral {
-            roman += romanNumberal
-            arabic -= arabicNumeral
+        while arabic >= arabicNumerals[1] {
+            roman += romanNumberals[1]
+            arabic -= arabicNumerals[1]
         }
         
         return roman
