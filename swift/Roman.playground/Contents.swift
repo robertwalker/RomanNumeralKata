@@ -12,16 +12,13 @@ import XCTest
 
 class RomanFormatter {
     func format(_ arabic: Int) -> String {
-        if arabic == 3 {
-            return "I" + "I" + "I"
+        var roman = ""
+
+        for _ in 0..<arabic {
+            roman += "I"
         }
-        if arabic == 2 {
-            return "I" + "I"
-        }
-        if arabic == 1 {
-            return "I"
-        }
-        return ""
+        
+        return roman
     }
 }
 
