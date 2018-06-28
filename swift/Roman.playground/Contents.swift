@@ -17,13 +17,11 @@ class RomanFormatter {
         
         var arabicNumerals = [10, 1]
         var romanNumberals = ["X", "I"]
-        while arabic >= arabicNumerals[0] {
-            roman += romanNumberals[0]
-            arabic -= arabicNumerals[0]
-        }
-        while arabic >= arabicNumerals[1] {
-            roman += romanNumberals[1]
-            arabic -= arabicNumerals[1]
+        for index in 0..<arabicNumerals.count {
+            while arabic >= arabicNumerals[index] {
+                roman += romanNumberals[index]
+                arabic -= arabicNumerals[index]
+            }
         }
         
         return roman
