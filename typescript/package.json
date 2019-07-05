@@ -1,4 +1,5 @@
 {
+  "license": "MIT",
   "jest": {
     "transform": {
       "^.+\\.tsx?$": "ts-jest"
