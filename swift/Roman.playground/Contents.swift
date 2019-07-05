@@ -162,7 +162,7 @@ class RomanFormatterTests: XCTestCase {
         XCTAssertEqual(roman, "CDXCIX")
     }
     
-    func textConvert500() throws {
+    func testConvert500() throws {
         let roman = try fmt.format(500)
         XCTAssertEqual(roman, "D")
     }
