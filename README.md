@@ -30,7 +30,7 @@ cd python
 
 ```bash
 $ python3 --version
-=> Python 3.6.5
+=> Python 3.8.5
 ```
 
 ### Setup a Python Virtual Environment
@@ -72,7 +72,7 @@ cd ruby
 
 ```bash
 $ ruby --version
-=> ruby 2.5.0p0 (2017-12-25 revision 61468) [x86_64-darwin17]
+=> ruby 2.7.0p0 (2019-12-25 revision 647ee6f091) [x86_64-darwin19]
 ```
 
 ```bash
@@ -89,8 +89,7 @@ gem install minitest
 ### Run Tests with Minitest
 
 ```bash
-$ ruby roman_formatter_test.rb
-=> <minitest output>
+ruby roman_formatter_test.rb
 ```
 
 ---
@@ -107,7 +106,7 @@ cd nodejs
 
 ```bash
 $ node --version
-=> v10.2.1
+=> v14.8.0
 
 $ npm --version
 => 6.14.7
