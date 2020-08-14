@@ -141,6 +141,8 @@ yarn install
 mocha tests --recursive --watch
 ```
 
+Note: Press Control-C to stop watching for file changes.
+
 ---
 
 ## TypeScript with Jest
