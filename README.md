@@ -103,42 +103,32 @@ $ ruby roman_formatter_test.rb
 cd nodejs
 ```
 
-### Check Your Node.js and Yarn Installation
+### Check Your Node.js and NPM Installation
 
 ```bash
 $ node --version
 => v10.2.1
 
-$ yarn --version
-=> 1.7.0
+$ npm --version
+=> 6.14.7
 ```
 
-If you don't have None.js or Yarn then can be installed with Homebrew:
+If you don't have Node.js it can be installed with Homebrew:
 
 ```bash
 brew install node
 ```
 
-```bash
-brew install yarn
-```
-
-### Install Mocha Using Yarn
-
-```bash
-yarn global add mocha
-```
-
 ### Install Project Dependencies
 
 ```bash
-yarn install
+npm install
 ```
 
 ### Run Tests with Mocha
 
 ```bash
-mocha tests --recursive --watch
+npm test
 ```
 
 Note: Press Control-C to stop watching for file changes.
@@ -153,29 +143,23 @@ Note: Press Control-C to stop watching for file changes.
 cd typescript
 ```
 
-### Check Your Yarn Installation
+### Check Your Node.js Installation
 
 ```bash
-$ yarn --version
-=> 1.7.0
-```
-
-If you don't have Yarn:
-
-```bash
-brew install yarn
+$ node --version
+=> v14.8.0
 ```
 
 ### Install TypeScript and Jest
 
 ```bash
-yarn install
+npm install
 ```
 
 ### Run Tests with Jest
 
 ```bash
-npx jest --watch
+npm test
 ```
 
 ---
