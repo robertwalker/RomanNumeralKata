@@ -1,15 +1,12 @@
-Roman Numeral Kata
-==================
+# Roman Numeral Kata
 
-What is Kata?
--------------
+## Kata
 
 Kata are detailed choreographed patterns of movements practiced either solo or in pairs. The term "form" is used for the corresponding concept in non-Japanese martial arts in general.
 
 [Kata -- Wikipedia Page](https://en.wikipedia.org/wiki/Kata)
 
-The Code Kata
--------------
+## The Code Kata
 
 This scaffolding setup is loosely based on the Roman Numeral Kata as described here:
 
@@ -21,111 +18,180 @@ Note that some solutions to the kata will be provided in the "develop" branch of
 
 ---
 
-Python with Pytest
-------------------
+## Python with Pytest
+
+### Switch to the Python Project
+
+```bash
+cd python
+```
 
 ### Check Your Python Installation
 
-    $ python --version
-    => Python 3.6.5
+```bash
+$ python3 --version
+=> Python 3.6.5
+```
+
+### Setup a Python Virtual Environment
+
+```bash
+python3 -m venv venv
+```
+
+```bash
+$ source venv/bin/activate
+=> (venv) $ # The venv prefix indicates the virtual environment is active
+```
 
 ### Install pytest
 
-    $ pip install pytest
+```bash
+pip install pytest
+```
 
-### Run Tests
+For more information on virtual environments see [venv documentation](https://docs.python.org/3/library/venv.html) .
 
-    $ cd python
-    $ py.test
+### Run Tests with Pytest
+
+```bash
+py.test
+```
 
 ---
 
-Ruby with Minitest
-------------------
+## Ruby with Minitest
+
+### Switch to the Ruby Project
+
+```bash
+cd ruby
+```
 
 ### Check Your Ruby Installation
 
-    $ ruby --version
-    => ruby 2.5.0p0 (2017-12-25 revision 61468) [x86_64-darwin17]
+```bash
+$ ruby --version
+=> ruby 2.5.0p0 (2017-12-25 revision 61468) [x86_64-darwin17]
+```
 
-    $ gem list minitest
-    => minitest (5.10.3)
+```bash
+$ gem list minitest
+=> minitest (5.10.3)
+```
 
 In case minitest is not installed:
 
-    $ gem install minitest
+```bash
+gem install minitest
+```
 
-### Run Tests
+### Run Tests with Minitest
 
-    $ cd ruby
-    $ ruby roman_formatter_test.rb
+```bash
+$ ruby roman_formatter_test.rb
+=> <minitest output>
+```
 
 ---
 
-Node.js with Mocha and Chai
----------------------------
+## Node.js with Mocha and Chai
+
+### Switch to the the Node.js Project
+
+```bash
+cd nodejs
+```
 
 ### Check Your Node.js and Yarn Installation
 
-    $ node --version
-    => v10.2.1
+```bash
+$ node --version
+=> v10.2.1
 
-    $ yarn --version
-    => 1.7.0
+$ yarn --version
+=> 1.7.0
+```
 
 If you don't have None.js or Yarn then can be installed with Homebrew:
 
-    $ brew install node
-    $ brew install yarn
+```bash
+brew install node
+```
 
-### Install Mocha
+```bash
+brew install yarn
+```
 
-    $ yarn global add mocha
+### Install Mocha Using Yarn
+
+```bash
+yarn global add mocha
+```
 
 ### Install Project Dependencies
 
-    $ cd nodejs
-    $ yarn install
+```bash
+yarn install
+```
 
-### Run Tests
+### Run Tests with Mocha
 
-    $ cd nodejs
-    $ mocha tests --recursive --watch
+```bash
+mocha tests --recursive --watch
+```
 
 ---
 
-TypeScript with Jest
---------------------
+## TypeScript with Jest
+
+### Switch to the TypeScript Project
+
+```bash
+cd typescript
+```
 
 ### Check Your Yarn Installation
 
-    $ yarn --version
-    => 1.7.0
+```bash
+$ yarn --version
+=> 1.7.0
+```
 
 If you don't have Yarn:
 
-    $ brew install yarn
+```bash
+brew install yarn
+```
 
 ### Install TypeScript and Jest
 
-    $ cd typescript
-    $ yarn install
+```bash
+yarn install
+```
 
-### Run Tests
+### Run Tests with Jest
 
-    $ cd typescript
-    $ npx jest --watch
+```bash
+npx jest --watch
+```
 
 ---
 
-Swift with XCTest
------------------
+## Swift with XCTest
+
+### Switch to the Swift Project
+
+```bash
+cd swift
+```
 
 ### Check Your Xcode Installation
 
-If you don't have Xcode (9.4+) install it from the Mac App Store (free download)
+If you don't have Xcode install it from the Mac App Store (free download)
 
-### Run Tests
+### Open the Playground and Run Tests with XCTest
 
-    $ cd swift
-    $ open Roman.playground
+```bash
+open Roman.playground
+```
