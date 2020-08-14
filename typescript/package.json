@@ -1,4 +1,12 @@
 {
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Demo",
+  "main": "roman_formatter.js",
+  "scripts": {
+    "test": "npx jest --watch"
+  },
+  "author": "Robert Walker",
   "license": "MIT",
   "jest": {
     "transform": {
@@ -14,10 +22,11 @@
       "node"
     ]
   },
-  "devDependencies": {
+  "dependencies": {
     "@types/jest": "^23.0.0",
     "jest": "^23.1.0",
     "ts-jest": "^22.4.6",
     "typescript": "^2.9.1"
-  }
+  },
+  "devDependencies": {}
 }
