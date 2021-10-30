@@ -13,7 +13,7 @@ import XCTest
 final class RomanFormatterTests: XCTestCase {
     let fmt = RomanFormatter()
     
-    func testConvert1() throws {
+    func testConvert1() {
         let roman = fmt.format(1)
         XCTAssertEqual(roman, "I")
     }

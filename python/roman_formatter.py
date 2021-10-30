@@ -1,3 +1,3 @@
-# class RomanFormatter:
-#     def format(self, arabic):
-#         pass
+class RomanFormatter:
+    def format(self, arabic):
+        return "I"

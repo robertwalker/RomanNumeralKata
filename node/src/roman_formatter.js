@@ -1,7 +1,7 @@
-// class RomanFormatter {
-//     format(arabic) {
-//         return null;
-//     }
-// }
+class RomanFormatter {
+    format(arabic) {
+        return "I";
+    }
+}
 
-// module.exports = RomanFormatter
+module.exports = RomanFormatter
