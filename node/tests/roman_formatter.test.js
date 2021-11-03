@@ -22,4 +22,10 @@ describe("RomanFormatter", () => {
     const roman = fmt.format(2);
     expect(roman).toEqual("II");
   });
+
+  it("should convert 3 to the Roman numeral III", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(3);
+    expect(roman).toEqual("III");
+  });
 });

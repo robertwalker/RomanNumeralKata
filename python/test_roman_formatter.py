@@ -18,3 +18,8 @@ def test_convert_2():
     fmt = RomanFormatter()
     roman = fmt.format(2)
     assert roman == "II"
+
+def test_convert_3():
+    fmt = RomanFormatter()
+    roman = fmt.format(3)
+    assert roman == "III"
