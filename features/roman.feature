@@ -7,3 +7,8 @@ Feature: Convert Arabic numerals to Roman numerals
     Given I have the arabic number 1
     When I convert to Roman
     Then I should see the string "I"
+
+  Scenario: Convert 2 to "II"
+    Given I have the arabic number 1
+    When I convert to Roman
+    Then I should see the string "II"

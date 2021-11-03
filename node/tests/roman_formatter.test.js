@@ -16,4 +16,10 @@ describe("RomanFormatter", () => {
     const roman = fmt.format(1);
     expect(roman).toEqual("I");
   });
+
+  it("should convert 2 to the Roman numeral II", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(2);
+    expect(roman).toEqual("II");
+  });
 });
