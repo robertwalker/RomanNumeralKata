@@ -1,7 +1,11 @@
 class RomanFormatter
   def format(arabic)
-    return 'I' + 'I' + 'I' if arabic == 3
-    return 'I' + 'I' if arabic == 2
-    roman = 'I'
+    roman = ''
+
+    for _ in 0...arabic do
+      roman += 'I'
+    end
+
+    roman
   end
 end

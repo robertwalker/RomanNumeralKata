@@ -1,12 +1,12 @@
 class RomanFormatter {
     format(arabic) {
-        if (arabic === 3) {
-            return "I" + "I" + "I"
+        let roman = "";
+
+        for (let i = 0; i < arabic; i++) {
+            roman += "I";
         }
-        if (arabic === 2) {
-            return "I" + "I";
-        }
-        return "I";
+
+        return roman;
     }
 }
 
