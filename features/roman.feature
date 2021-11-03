@@ -17,3 +17,8 @@ Feature: Convert Arabic numerals to Roman numerals
     Given I have the arabic number 3
     When I convert to Roman
     Then I should see the string "III"
+
+  Scenario: Convert 10 to "X"
+    Given I have the arabic number 10
+    When I convert to Roman
+    Then I should see the string "X"

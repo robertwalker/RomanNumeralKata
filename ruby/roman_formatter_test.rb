@@ -28,4 +28,10 @@ class TestRomanFormatter < Minitest::Test
     roman = fmt.format(3)
     assert_equal "III", roman
   end
+
+  def test_convert_10
+    fmt = RomanFormatter.new
+    roman = fmt.format(10)
+    assert_equal "X", roman
+  end
 end

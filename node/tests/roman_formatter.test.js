@@ -28,4 +28,10 @@ describe("RomanFormatter", () => {
     const roman = fmt.format(3);
     expect(roman).toEqual("III");
   });
+
+  it("should convert 10 to the Roman numeral X", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(10);
+    expect(roman).toEqual("X");
+  });
 });
