@@ -2,13 +2,17 @@ class RomanFormatter
   def format(arabic)
     roman = ''
 
-    while arabic >= 10 do
-      roman += 'X'
-      arabic -= 10
+    arabicNumeral = 10
+    romanNumeral = 'X'
+    while arabic >= arabicNumeral do
+      roman += romanNumeral
+      arabic -= arabicNumeral
     end
-    while arabic >= 1 do
-      roman += 'I'
-      arabic -= 1
+    arabicNumeral = 1
+    romanNumeral = 'I'
+    while arabic >= arabicNumeral do
+      roman += romanNumeral
+      arabic -= arabicNumeral
     end
 
     roman
