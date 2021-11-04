@@ -34,4 +34,16 @@ describe("RomanFormatter", () => {
     const roman = fmt.format(10);
     expect(roman).toEqual("X");
   });
+
+  it("should convert 20 to the Roman numeral XX", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(20);
+    expect(roman).toEqual("XX");
+  });
+
+  it("should convert 30 to the Roman numeral XXX", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(30);
+    expect(roman).toEqual("XXX");
+  });
 });

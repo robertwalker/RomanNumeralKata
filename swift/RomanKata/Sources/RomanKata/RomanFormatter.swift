@@ -1,12 +1,15 @@
 struct RomanFormatter {
-    func format(_ arabic: Int) -> String {
+    func format(_ number: Int) -> String {
+        var arabic = number
         var roman = ""
         
-        if arabic == 10 {
-            return "X"
+        while arabic >= 10 {
+            roman += "X"
+            arabic -= 10
         }
-        for _ in 0..<arabic {
+        while arabic >= 1 {
             roman += "I"
+            arabic -= 1
         }
         
         return roman

@@ -28,3 +28,13 @@ def test_convert_10():
     fmt = RomanFormatter()
     roman = fmt.format(10)
     assert roman == "X"
+
+def test_convert_20():
+    fmt = RomanFormatter()
+    roman = fmt.format(20)
+    assert roman == "XX"
+
+def test_convert_30():
+    fmt = RomanFormatter()
+    roman = fmt.format(30)
+    assert roman == "XXX"

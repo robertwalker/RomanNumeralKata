@@ -2,11 +2,13 @@ class RomanFormatter {
     format(arabic) {
         let roman = "";
 
-        if (arabic == 10) {
-            return "X";
+        while (arabic >= 10) {
+            roman += "X";
+            arabic -= 10;
         }
-        for (let i = 0; i < arabic; i++) {
+        while (arabic >= 1) {
             roman += "I";
+            arabic -= 1;
         }
 
         return roman;

@@ -2,9 +2,11 @@ class RomanFormatter:
     def format(self, arabic):
         roman = ""
 
-        if arabic == 10:
-            return "X"
-        for _ in range(arabic):
+        while arabic >= 10:
+            roman += "X"
+            arabic -= 10
+        while arabic >= 1:
             roman += "I"
+            arabic -= 1
         
         return roman
