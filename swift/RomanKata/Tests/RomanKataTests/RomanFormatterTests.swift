@@ -33,6 +33,11 @@ final class RomanFormatterTests: XCTestCase {
         XCTAssertEqual(roman, "X")
     }
     
+    func testConvert5() {
+        let roman = fmt.format(5)
+        XCTAssertEqual(roman, "V")
+    }
+    
     func testConvert20() {
         let roman = fmt.format(20)
         XCTAssertEqual(roman, "XX")

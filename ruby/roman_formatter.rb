@@ -2,8 +2,8 @@ class RomanFormatter
   def format(arabic)
     roman = ''
 
-    arabicNumerals = [10, 1]
-    romanNumerals = ['X', 'I']
+    arabicNumerals = [10, 5, 1]
+    romanNumerals = ['X', 'V', 'I']
     for index in (0...arabicNumerals.length) do
       while arabic >= arabicNumerals[index] do
         roman += romanNumerals[index]

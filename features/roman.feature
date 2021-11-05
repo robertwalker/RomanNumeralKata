@@ -18,7 +18,22 @@ Feature: Convert Arabic numerals to Roman numerals
     When I convert to Roman
     Then I should see the string "III"
 
+  Scenario: Convert 5 to "V"
+    Given I have the arabic number 5
+    When I convert to Roman
+    Then I should see the string "V"
+
   Scenario: Convert 10 to "X"
     Given I have the arabic number 10
     When I convert to Roman
     Then I should see the string "X"
+
+  Scenario: Convert 20 to "XX"
+    Given I have the arabic number 20
+    When I convert to Roman
+    Then I should see the string "XX"
+
+  Scenario: Convert 30 to "XXX"
+    Given I have the arabic number 30
+    When I convert to Roman
+    Then I should see the string "XXX"

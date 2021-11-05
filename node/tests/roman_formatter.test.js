@@ -29,6 +29,12 @@ describe("RomanFormatter", () => {
     expect(roman).toEqual("III");
   });
 
+  it("should convert 5 to the Roman numeral V", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(5);
+    expect(roman).toEqual("V");
+  });
+
   it("should convert 10 to the Roman numeral X", () => {
     const fmt = new RomanFormatter([]);
     const roman = fmt.format(10);
