@@ -24,6 +24,11 @@ def test_convert_3():
     roman = fmt.format(3)
     assert roman == "III"
 
+def test_convert_4():
+    fmt = RomanFormatter()
+    roman = fmt.format(4)
+    assert roman == "IV"
+
 def test_convert_5():
     fmt = RomanFormatter()
     roman = fmt.format(5)
@@ -38,6 +43,11 @@ def test_convert_8():
     fmt = RomanFormatter()
     roman = fmt.format(8)
     assert roman == "VIII"
+
+def test_convert_9():
+    fmt = RomanFormatter()
+    roman = fmt.format(9)
+    assert roman == "IX"
 
 def test_convert_10():
     fmt = RomanFormatter()

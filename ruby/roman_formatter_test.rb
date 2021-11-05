@@ -29,6 +29,12 @@ class TestRomanFormatter < Minitest::Test
     assert_equal "III", roman
   end
 
+  def test_convert_4
+    fmt = RomanFormatter.new
+    roman = fmt.format(4)
+    assert_equal "IV", roman
+  end
+
   def test_convert_5
     fmt = RomanFormatter.new
     roman = fmt.format(5)
@@ -45,6 +51,12 @@ class TestRomanFormatter < Minitest::Test
     fmt = RomanFormatter.new
     roman = fmt.format(8)
     assert_equal "VIII", roman
+  end
+
+  def test_convert_9
+    fmt = RomanFormatter.new
+    roman = fmt.format(9)
+    assert_equal "IX", roman
   end
 
   def test_convert_10

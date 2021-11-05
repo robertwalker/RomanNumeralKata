@@ -18,6 +18,11 @@ Feature: Convert Arabic numerals to Roman numerals
     When I convert to Roman
     Then I should see the string "III"
 
+  Scenario: Convert 4 to "IV"
+    Given I have the arabic number 4
+    When I convert to Roman
+    Then I should see the string "IV"
+
   Scenario: Convert 5 to "V"
     Given I have the arabic number 5
     When I convert to Roman
@@ -32,6 +37,11 @@ Feature: Convert Arabic numerals to Roman numerals
     Given I have the arabic number 8
     When I convert to Roman
     Then I should see the string "VIII"
+
+  Scenario: Convert 9 to "IX"
+    Given I have the arabic number 9
+    When I convert to Roman
+    Then I should see the string "IX"
 
   Scenario: Convert 10 to "X"
     Given I have the arabic number 10

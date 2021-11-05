@@ -29,6 +29,12 @@ describe("RomanFormatter", () => {
     expect(roman).toEqual("III");
   });
 
+  it("should convert 4 to the Roman numeral IV", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(4);
+    expect(roman).toEqual("IV");
+  });
+
   it("should convert 5 to the Roman numeral V", () => {
     const fmt = new RomanFormatter([]);
     const roman = fmt.format(5);
@@ -45,6 +51,12 @@ describe("RomanFormatter", () => {
     const fmt = new RomanFormatter([]);
     const roman = fmt.format(8);
     expect(roman).toEqual("VIII");
+  });
+
+  it("should convert 9 to the Roman numeral IX", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(9);
+    expect(roman).toEqual("IX");
   });
 
   it("should convert 10 to the Roman numeral X", () => {
