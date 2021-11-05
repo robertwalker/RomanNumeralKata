@@ -23,6 +23,16 @@ Feature: Convert Arabic numerals to Roman numerals
     When I convert to Roman
     Then I should see the string "V"
 
+  Scenario: Convert 6 to "VI"
+    Given I have the arabic number 6
+    When I convert to Roman
+    Then I should see the string "VI"
+
+  Scenario: Convert 8 to "VIII"
+    Given I have the arabic number 8
+    When I convert to Roman
+    Then I should see the string "VIII"
+
   Scenario: Convert 10 to "X"
     Given I have the arabic number 10
     When I convert to Roman

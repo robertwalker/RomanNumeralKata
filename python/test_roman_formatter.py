@@ -29,6 +29,16 @@ def test_convert_5():
     roman = fmt.format(5)
     assert roman == "V"
 
+def test_convert_6():
+    fmt = RomanFormatter()
+    roman = fmt.format(6)
+    assert roman == "VI"
+
+def test_convert_8():
+    fmt = RomanFormatter()
+    roman = fmt.format(8)
+    assert roman == "VIII"
+
 def test_convert_10():
     fmt = RomanFormatter()
     roman = fmt.format(10)

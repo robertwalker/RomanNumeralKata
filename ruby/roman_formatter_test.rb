@@ -35,6 +35,18 @@ class TestRomanFormatter < Minitest::Test
     assert_equal "V", roman
   end
 
+  def test_convert_6
+    fmt = RomanFormatter.new
+    roman = fmt.format(6)
+    assert_equal "VI", roman
+  end
+
+  def test_convert_8
+    fmt = RomanFormatter.new
+    roman = fmt.format(8)
+    assert_equal "VIII", roman
+  end
+
   def test_convert_10
     fmt = RomanFormatter.new
     roman = fmt.format(10)
