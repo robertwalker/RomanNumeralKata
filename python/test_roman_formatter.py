@@ -1,3 +1,5 @@
+import pytest
+
 #: Roman Numerals Kata
 # I: 1
 # V: 5
@@ -8,6 +10,31 @@
 # M: 1000
 
 from roman_formatter import RomanFormatter
+
+def test_convert_negative_numbers():
+    fmt = RomanFormatter()
+    with pytest.raises(Exception):
+        roman = fmt.format(-1)
+
+def test_convert_0():
+    fmt = RomanFormatter()
+    with pytest.raises(Exception):
+        roman = fmt.format(0)
+
+def test_convert_numbers_greater_than_3999():
+    fmt = RomanFormatter()
+    with pytest.raises(Exception):
+        roman = fmt.format(4000)
+
+def test_convert_non_numeric_values():
+    fmt = RomanFormatter()
+    with pytest.raises(Exception):
+        roman = fmt.format("foo")
+
+def test_convert_non_integer_values():
+    fmt = RomanFormatter()
+    with pytest.raises(Exception):
+        roman = fmt.format(1.1)
 
 def test_convert_1():
     fmt = RomanFormatter()

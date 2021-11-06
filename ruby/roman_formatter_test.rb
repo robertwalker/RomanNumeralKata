@@ -11,6 +11,41 @@ require 'minitest/autorun'
 require './roman_formatter'
 
 class TestRomanFormatter < Minitest::Test
+  def test_convert_negative_numbers
+    fmt = RomanFormatter.new
+    assert_raises do
+      roman = fmt.format(-1)
+    end
+  end
+
+  def test_convert_0
+    fmt = RomanFormatter.new
+    assert_raises do
+      roman = fmt.format(0)
+    end
+  end
+
+  def test_convert_numbers_greater_than_3999
+    fmt = RomanFormatter.new
+    assert_raises do
+      roman = fmt.format(4000)
+    end
+  end
+
+  def test_convert_non_numeric_values
+    fmt = RomanFormatter.new
+    assert_raises do
+      roman = fmt.format("foo")
+    end
+  end
+
+  def test_convert_non_integer_values
+    fmt = RomanFormatter.new
+    assert_raises do
+      roman = fmt.format(1.1)
+    end
+  end
+
   def test_convert_1
     fmt = RomanFormatter.new
     roman = fmt.format(1)

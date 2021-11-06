@@ -11,6 +11,41 @@
 const RomanFormatter = require("../src/roman_formatter");
 
 describe("RomanFormatter", () => {
+  it("should throw an error given a negative number", () => {
+    const fmt = new RomanFormatter([]);
+    expect(() => {
+      fmt.format(-1);
+    }).toThrow();
+  });
+
+  it("should throw an error given 0", () => {
+    const fmt = new RomanFormatter([]);
+    expect(() => {
+      fmt.format(0);
+    }).toThrow();
+  });
+
+  it("should throw an error given a number greater than 3999", () => {
+    const fmt = new RomanFormatter([]);
+    expect(() => {
+      fmt.format(4000);
+    }).toThrow();
+  });
+
+  it("should throw an error given a non-numeric value", () => {
+    const fmt = new RomanFormatter([]);
+    expect(() => {
+      fmt.format("foo");
+    }).toThrow();
+  });
+
+  it("should throw an error given a non-integer value", () => {
+    const fmt = new RomanFormatter([]);
+    expect(() => {
+      fmt.format(1.1);
+    }).toThrow();
+  });
+
   it("should convert 1 to the Roman numeral I", () => {
     const fmt = new RomanFormatter([]);
     const roman = fmt.format(1);

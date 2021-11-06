@@ -1,7 +1,23 @@
 Feature: Convert Arabic numerals to Roman numerals
   Arabic numerals must be positive integers between 1 and 3999
+  Present an error message given any other values
   Roman numerals must be represented using subtractive notation
   See: <https://en.wikipedia.org/wiki/Roman_numerals#Basic_decimal_pattern>
+
+  Scenario: Throw error when given 0
+    Given I have the arabic number 0
+    When I convert to Roman
+    Then I should see an error message explaining that 0 is outside the range 1-3999
+
+  Scenario: Throw error when given a negative number
+    Given I have the arabic number -1
+    When I convert to Roman
+    Then I should see an error message explaining that any negative number is outside the range 1-3999
+
+  Scenario: Throw error when given a number greater than 3999
+    Given I have the arabic number 4000
+    When I convert to Roman
+    Then I should see an error message explaining that numbers above 3999 are outside the range 1-3999
 
   Scenario: Convert 1 to "I"
     Given I have the arabic number 1
