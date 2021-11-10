@@ -111,4 +111,52 @@ class TestRomanFormatter < Minitest::Test
     roman = fmt.format(30)
     assert_equal "XXX", roman
   end
+
+  def test_convert_40
+    fmt = RomanFormatter.new
+    roman = fmt.format(40)
+    assert_equal "XL", roman
+  end
+
+  def test_convert_50
+    fmt = RomanFormatter.new
+    roman = fmt.format(50)
+    assert_equal "L", roman
+  end
+
+  def test_convert_90
+    fmt = RomanFormatter.new
+    roman = fmt.format(90)
+    assert_equal "XC", roman
+  end
+
+  def test_convert_300
+    fmt = RomanFormatter.new
+    roman = fmt.format(300)
+    assert_equal "CCC", roman
+  end
+
+  def test_convert_400
+    fmt = RomanFormatter.new
+    roman = fmt.format(400)
+    assert_equal "CD", roman
+  end
+
+  def test_convert_500
+    fmt = RomanFormatter.new
+    roman = fmt.format(500)
+    assert_equal "D", roman
+  end
+
+  def test_convert_900
+    fmt = RomanFormatter.new
+    roman = fmt.format(900)
+    assert_equal "CM", roman
+  end
+
+  def test_convert_3000
+    fmt = RomanFormatter.new
+    roman = fmt.format(3000)
+    assert_equal "MMM", roman
+  end
 end

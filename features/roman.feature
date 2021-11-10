@@ -73,3 +73,43 @@ Feature: Convert Arabic numerals to Roman numerals
     Given I have the arabic number 30
     When I convert to Roman
     Then I should see the string "XXX"
+
+  Scenario: Convert 40 to "XL"
+    Given I have the arabic number 40
+    When I convert to Roman
+    Then I should see the string "XL"
+
+  Scenario: Convert 50 to "L"
+    Given I have the arabic number 50
+    When I convert to Roman
+    Then I should see the string "L"
+
+  Scenario: Convert 90 to "XC"
+    Given I have the arabic number 90
+    When I convert to Roman
+    Then I should see the string "XC"
+
+  Scenario: Convert 300 to "CCC"
+    Given I have the arabic number 300
+    When I convert to Roman
+    Then I should see the string "CCC"
+
+  Scenario: Convert 400 to "CD"
+    Given I have the arabic number 400
+    When I convert to Roman
+    Then I should see the string "CD"
+
+  Scenario: Convert 500 to "D"
+    Given I have the arabic number 500
+    When I convert to Roman
+    Then I should see the string "D"
+
+  Scenario: Convert 900 to "CM"
+    Given I have the arabic number 900
+    When I convert to Roman
+    Then I should see the string "CM"
+
+  Scenario: Convert 3000 to "MMM"
+    Given I have the arabic number 3000
+    When I convert to Roman
+    Then I should see the string "MMM"

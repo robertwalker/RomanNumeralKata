@@ -90,3 +90,43 @@ def test_convert_30():
     fmt = RomanFormatter()
     roman = fmt.format(30)
     assert roman == "XXX"
+
+def test_convert_40():
+    fmt = RomanFormatter()
+    roman = fmt.format(40)
+    assert roman == "XL"
+
+def test_convert_50():
+    fmt = RomanFormatter()
+    roman = fmt.format(50)
+    assert roman == "L"
+
+def test_convert_90():
+    fmt = RomanFormatter()
+    roman = fmt.format(90)
+    assert roman == "XC"
+
+def test_convert_300():
+    fmt = RomanFormatter()
+    roman = fmt.format(300)
+    assert roman == "CCC"
+
+def test_convert_400():
+    fmt = RomanFormatter()
+    roman = fmt.format(400)
+    assert roman == "CD"
+
+def test_convert_500():
+    fmt = RomanFormatter()
+    roman = fmt.format(500)
+    assert roman == "D"
+
+def test_convert_900():
+    fmt = RomanFormatter()
+    roman = fmt.format(900)
+    assert roman == "CM"
+
+def test_convert_3000():
+    fmt = RomanFormatter()
+    roman = fmt.format(3000)
+    assert roman == "MMM"

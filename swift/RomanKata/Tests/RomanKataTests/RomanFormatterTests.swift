@@ -79,4 +79,44 @@ final class RomanFormatterTests: XCTestCase {
         let roman = try fmt.format(30)
         XCTAssertEqual(roman, "XXX")
     }
+
+    func testConvert40() throws {
+        let roman = try fmt.format(40)
+        XCTAssertEqual(roman, "XL")
+    }
+
+    func testConvert50() throws {
+        let roman = try fmt.format(50)
+        XCTAssertEqual(roman, "L")
+    }
+
+    func testConvert90() throws {
+        let roman = try fmt.format(90)
+        XCTAssertEqual(roman, "XC")
+    }
+
+    func testConvert300() throws {
+        let roman = try fmt.format(300)
+        XCTAssertEqual(roman, "CCC")
+    }
+
+    func testConvert400() throws {
+        let roman = try fmt.format(400)
+        XCTAssertEqual(roman, "CD")
+    }
+
+    func testConvert500() throws {
+        let roman = try fmt.format(500)
+        XCTAssertEqual(roman, "D")
+    }
+
+    func testConvert900() throws {
+        let roman = try fmt.format(900)
+        XCTAssertEqual(roman, "CM")
+    }
+
+    func testConvert3000() throws {
+        let roman = try fmt.format(3000)
+        XCTAssertEqual(roman, "MMM")
+    }
 }

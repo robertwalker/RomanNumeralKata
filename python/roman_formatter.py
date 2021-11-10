@@ -5,8 +5,8 @@ class RomanFormatter:
         if arabic not in range(1, 3999):
             raise Exception(f"{arabic} is not in valid range of 1-3999")
 
-        arabicNumerals = [10, 9, 5, 4, 1]
-        romanNumerals = ["X", "IX", "V", "IV", "I"]
+        arabicNumerals = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+        romanNumerals = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
         for index in range(len(arabicNumerals)):
             while arabic >= arabicNumerals[index]:
                 roman += romanNumerals[index]

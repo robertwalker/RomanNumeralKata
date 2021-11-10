@@ -111,4 +111,52 @@ describe("RomanFormatter", () => {
     const roman = fmt.format(30);
     expect(roman).toEqual("XXX");
   });
+
+  it("should convert 40 to the Roman numeral XL", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(40);
+    expect(roman).toEqual("XL");
+  });
+
+  it("should convert 50 to the Roman numeral L", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(50);
+    expect(roman).toEqual("L");
+  });
+
+  it("should convert 90 to the Roman numeral XC", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(90);
+    expect(roman).toEqual("XC");
+  });
+
+  it("should convert 300 to the Roman numeral CCC", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(300);
+    expect(roman).toEqual("CCC");
+  });
+
+  it("should convert 400 to the Roman numeral CD", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(400);
+    expect(roman).toEqual("CD");
+  });
+
+  it("should convert 500 to the Roman numeral D", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(500);
+    expect(roman).toEqual("D");
+  });
+
+  it("should convert 900 to the Roman numeral CM", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(900);
+    expect(roman).toEqual("CM");
+  });
+
+  it("should convert 3000 to the Roman numeral MMM", () => {
+    const fmt = new RomanFormatter([]);
+    const roman = fmt.format(3000);
+    expect(roman).toEqual("MMM");
+  });
 });
