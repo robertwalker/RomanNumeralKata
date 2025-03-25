@@ -1,0 +1,15 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Demo",
+  "main": "roman_formatter.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "jest --watch"
+  },
+  "author": "Robert Walker",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
