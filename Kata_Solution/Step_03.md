@@ -63,7 +63,7 @@ func format(_ arabic: Int) -> String {
 }
 ```
 
-Awesome! This gets us back to <span style="color: green;">Green</span>.
+Awesome! This gets us back to the "Green" phase.
 
 Can you find a pattern in the above code?
 
@@ -75,8 +75,8 @@ Can you find a pattern in the above code?
 
 A pattern emerges: As the Arabic number increments, we append “I” to the Roman numeral string.
 
-As we begin the <span style="color: #a8a800;">Refactor</span> phase of our TDD cycle, we can predict the final
-solution will involve string concatenation of some sort.
+As we begin the "Refactor" phase of our TDD cycle, we can predict the final solution will involve string concatenation
+of some sort.
 
 Let’s make that more obvious in our code before we move to the next step.
 
@@ -92,7 +92,7 @@ func format(_ arabic: Int) -> String {
 }
 ```
 
-Let’s give the unit tests another spin to make sure we’re still <span style="color: green;">green</span>.
+Let’s give the unit tests another spin to make sure we’re still in the "Green" phase.
 
 Congratulations! We now have a clear example of a fundamental pattern for this algorithm.
 
