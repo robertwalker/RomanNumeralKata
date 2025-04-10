@@ -2,7 +2,7 @@
 
 ## Step 4: Refactor Using a Loop
 
-In Step 3, we began the <span style="color: #a8a800;">Refactor</span> stage of the TDD cycle.
+In Step 3, we began the "Refactor" phase of the TDD cycle.
 
 Now, we have a better idea of a basic pattern for our function.
 
@@ -100,7 +100,7 @@ struct RomanFormatterTests {
 }
 ```
 
-Congratulations on completing your first <span style="color: #a8a800;">refactor</span> phase of the TDD cycle!
+Congratulations on completing your first "Refactor" phase of the TDD cycle!
 
 </details>
 

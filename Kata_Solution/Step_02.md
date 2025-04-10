@@ -43,8 +43,7 @@ func convert2() {
 convert2(): Expectation failed: (roman → "I") == "II"
 ```
 
-Awesome! We’re back to one failing test, which means we’re back in the <span style="color: red;">Red</span> state of the
-TDD cycle.
+Awesome! We’re back to one failing test, which means we’re back in the "Red" phase of the TDD cycle.
 
 Let’s implement just enough logic to pass both tests. What would that look like?
 
@@ -65,9 +64,9 @@ func format(_ arabic: Int) -> String {
 
 </details>
 
-Congratulations! All tests are passing. We are back to <span style="color: green;">Green</span>.
+Congratulations! All tests are passing. We are back to the "Green" phase.
 
-We are now ready to begin the <span style="color: #a8a800;">Refactor</span> state of the TDD cycle.
+We are now ready to begin the "Refactor" phase of the TDD cycle.
 
 Here are some of the things to look for:
 
