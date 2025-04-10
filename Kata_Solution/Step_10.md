@@ -61,7 +61,6 @@ Let’s give our tests another go to see how far we can get.
 
 Guess what? That new failing test actually passed! And all the other tests are still passing too.
 
-We’re back to <span style="color: green;">green</span>. and there’s nothing to clean up or
-<span style="color: #a8a800;">refactor</span>.
+We’re back to the "Green" phase. and there’s nothing to clean up or refactor.
 
 [Go to Step 11](./Step_11.md)

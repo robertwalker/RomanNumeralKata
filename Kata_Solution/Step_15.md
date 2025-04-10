@@ -141,7 +141,7 @@ let romanNumerals = ["C", "X", "IX", "V", "IV", "I"]
 
 Alright, let’s run the tests again.
 
-Awesome! That means we’re back to <span style="color: green;">Green</span>.
+Awesome! That means we’re back to the "Green" phase.
 
 Next we'll add `300` to represent the upper bounds of the repeating pattern:
 
@@ -158,7 +158,7 @@ func convertToRoman(arabic: Int, expectedRoman: String) throws {
 }
 ```
 
-Alright, let’s run the tests again. We should still be <span style="color: green;">Green</span>.
+Alright, let’s run the tests again. We should still be in the "Green" phase.
 
 Now, let’s focus on the ‘never repeating’ pattern for ‘L’ representing `50`:
 
@@ -188,7 +188,7 @@ let arabicNumerals = [100, 50, 10, 9, 5, 4, 1]
 let romanNumerals = ["C", "L", "X", "IX", "V", "IV", "I"]
 ```
 
-Awesome! We’re back to <span style="color: green;">Green</span>.
+Awesome! We’re back to the "Green" phase.
 
 Now, let’s tackle the subtractive notation pattern for ’40’:
 

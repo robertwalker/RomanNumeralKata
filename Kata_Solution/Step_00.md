@@ -71,7 +71,7 @@ Cannot find 'RomanFormatter' in scope
 This error makes sense give that we haven't created the `RomanFormatter` type yet, and Swift is a compiled language
 hence the compile-time error.
 
-We are now in the <span style="color: red;">Red</span> state of the TDD cycle.
+We are now in the "Red" phase of the TDD cycle.
 
 This starter kit includes a sample implementation file for each supported programming language. Please note that the
 sample code in the file is commented out.
@@ -84,7 +84,7 @@ sample code in the file is commented out.
 //}
 ```
 
-Next we will work on getting to the <span style="color: green;">Green</span> state of the TDD cycle by adding an
+Next we will work on getting to the "Green" phase of the TDD cycle by adding an
 implementation that will satisfy the first scenario of the feature specification.
 
 [Go to Step 1](./Step_01.md)
