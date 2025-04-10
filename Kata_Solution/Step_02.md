@@ -32,7 +32,7 @@ Feature: Convert Arabic numerals to Roman numerals
 We’ll create a new unit test for the second scenario and run it.
 
 ```swift
-@Test("expect roman to be I")
+@Test("expect roman to be II")
 func convert2() {
     let roman = fmt.format(2)
     #expect(roman == "II")
