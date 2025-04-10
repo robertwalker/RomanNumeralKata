@@ -115,7 +115,7 @@ Rerun the tests. The new test should fail with an error similar to this:
 Expectation failed: an error was expected but none was thrown and "I" was returned: try fmt.format(0)
 ```
 
-Awesome! We’re back to red with one failing test. Let’s add some logic that throws an error when given `0`.
+Awesome! We’re back to the "Red" phase with one failing test. Let’s add some logic that throws an error when given `0`.
 
 To try to make this test pass, we’ll add a guard statement that throws our new `RomanError.numberOutOfRange` error.
 

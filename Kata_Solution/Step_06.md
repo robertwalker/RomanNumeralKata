@@ -55,7 +55,7 @@ func format(_ arabic: Int) -> String {
 }
 ```
 
-So, we’re back to <span style="color: green;">green</span>, but it looks a lot like our original pattern.
+So, we’re back to the "Green" phase, but it looks a lot like our original pattern.
 
 The sequence `[10, 20, 30]` is similar to `[1, 2, 3]`, but on the 10’s column. How can we use that knowledge?
 
@@ -125,7 +125,7 @@ func format(_ number: Int) -> String {
 
 </details>
 
-Let’s rerun our tests to ensure no changes broke anything. We’re still <span style="color: green;">green</span>.
+Let’s rerun our tests to ensure no changes broke anything. We’re still in the "Green" phase.
 
 If our expected pattern is correct, this code should also pass for the Arabic numeral `30`.
 
@@ -154,8 +154,7 @@ Excellent! The new test passes, proving our hypothesis is correct up to this poi
 
 However, we are left with two `while` loops that are practically identical, except for the values that they work with.
 
-Let's resolve this code duplication issue in our next step. Time to <span style="color: #a8a800;">refactor</span> our
-code.
+Let's resolve this code duplication issue in our next step. Time to refactor our code.
 
 ## Notes
 

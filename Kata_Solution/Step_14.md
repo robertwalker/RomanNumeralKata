@@ -85,9 +85,9 @@ guard arabic >= 1, arabic <= 3999 else {
 }
 ```
 
-We’ve successfully transitioned back to the <span style="color: green;">Green</span> phase.
+We’ve successfully transitioned back to the "Green" phase.
 
-Next, we'll start another <span style="color: #a8a800;">Refactor</span> phase.
+Next, we'll start another "Refactor" phase.
 
 We will review our implementation, looking for any duplication or cleanup that may be needed.
 
